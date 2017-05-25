@@ -1,0 +1,24 @@
+{
+  "name": "ember-classnames",
+  "description": "The default blueprint for ember-cli addons.",
+  "main": "index.js",
+  "authors": [
+    "Zhongliang Wang <zwang@rebelworks.io>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ember-addon"
+  ],
+  "homepage": "https://github.com/Cryrivers/ember-classnames",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
+}
