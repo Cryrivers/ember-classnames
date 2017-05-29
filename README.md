@@ -1,26 +1,37 @@
+[![Build Status](https://travis-ci.org/Cryrivers/ember-classnames.svg?branch=master)](https://travis-ci.org/Cryrivers/ember-classnames)
 # ember-classnames
-
-This README outlines the details of collaborating on this Ember addon.
+`ember-classnames` is an Ember.js wrapper for the popular [`classnames`](https://github.com/JedWatson/classnames) library made by **Jed Watson**
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-classnames`
-* `npm install`
+`ember install ember-classnames`
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+### JavaScript
+
+```js
+import Ember from 'ember';
+import cx from 'classnames';
+import hbs from 'htmlbars-inline-precompile'
+
+export default Ember.Component.extend({
+  layout: hbs`<div class=${cx('foo', 'bar', { qux: true })}></div>`
+});
+```
+
+
+### Templates
+
+```hbs
+<div class="{{cx 'foo' 'bar' qux=true}}"></div>
+<div class="{{cx 'button' button--disabled=disabled}}">
+  Button
+</div>
+```
 
 ## Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
