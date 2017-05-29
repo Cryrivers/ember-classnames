@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Cryrivers/ember-classnames.svg?branch=master)](https://travis-ci.org/Cryrivers/ember-classnames)
 # ember-classnames
-`ember-classnames` is an Ember.js wrapper for the popular [`classnames`](https://github.com/JedWatson/classnames) library made by **Jed Watson**
+`ember-classnames` is a wrapper addon of the popular [`classnames`](https://github.com/JedWatson/classnames) library made by **Jed Watson**
 
 ## Installation
 
