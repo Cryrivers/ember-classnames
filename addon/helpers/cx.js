@@ -1,6 +1,6 @@
-import Ember from 'ember';
-import classNames from 'classnames';
+import { helper as buildHelper } from "@ember/component/helper";
+import classNames from "classnames";
 
-export default Ember.Helper.helper(function([...params], hash) {
+export default buildHelper(function([...params], hash) {
   return classNames(...params, hash);
 });
